@@ -71,7 +71,7 @@ foldl (+) 0 [1, 2, 3, 4]
 == -- expanding the sugar for the list
 foldl (+) 0 (1 : (2 : (3 : (4 : []))))
 == -- replacing : with + and [] with 0
-((((1 + 2) + 3) + 4) + 0)
+((((0 + 1) + 2) + 3) + 4)
 ==
 10
 ```
